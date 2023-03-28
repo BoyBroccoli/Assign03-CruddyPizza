@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    English String Names-->
+    <string name="crustPromptTxtView01">Choose Crust Size!</string>
+    <string name="toppingsPromptTxtView01">Choose Toppings!</string>
+    <string name="toppingTxtView01">Cheese:</string>
+    <string name="toppingTxtView02">Chicken:</string>
+    <string name="toppingTxtView03">Pepperoni:</string>
+    <string name="toppingTxtView04">Sausage:</string>
+    <string name="toppingTxtView05">Red Onion:</string>
+    <string name="toppingTxtView06">Mushroom:</string>
+    <string name="toppingTxtView07">Pineapple:</string>
+    <string name="toppingTxtView08">Veggies</string>
+    <string name="customerPromptTxtView01">Customer Info!</string>
+    <string name="customerQ1PlainText01">Customer Name:</string>
+    <string name="customerQ2TxtPhone01">Customer Phone Number:</string>
+    <string name="customerQ3TxtPostalAddress01">Customer Address:</string>
+    <string name="orderBtn01">Order!</string>
+</resources>

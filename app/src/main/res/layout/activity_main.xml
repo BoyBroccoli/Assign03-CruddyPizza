@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E14545"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo01"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:background="#FEFEFE"
+                app:srcCompat="@drawable/savagepizza_logo" />
+
+            <Switch
+                android:id="@+id/toggleSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FEFEFE"
+                android:contextClickable="false"
+                android:foregroundGravity="clip_horizontal"
+                android:gravity="center_horizontal"
+                android:showText="true"
+                android:textAlignment="center"
+                android:textOff="En"
+                android:textOn="Fr"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/crustPromptTxtView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/crustPromptTxtView01"
+                android:textAlignment="center"
+                android:textColor="#0B0A0A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E14545"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/smallSizeBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/smallSizeRadioBtn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/medSizeBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/medSizeRadioBtn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/largSizeBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/largSizeRadioBtn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/xlSizeBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/xlSizeRadioBtn" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toppingsPromptTxtView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:text="@string/toppingsPromptTxtView01"
+                        android:textAlignment="center"
+                        android:textColor="#0B0A0A"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--                    cheese text view-->
+                    <TextView
+                        android:id="@+id/toppingTxtView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView01"
+                        android:textAlignment="center"
+                        android:textColor="#0E0E0E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                    chicken text view-->
+                    <TextView
+                        android:id="@+id/toppingTxtView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView02"
+                        android:textAlignment="center"
+                        android:textColor="#121111"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subCheeseBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subCheeseBtn" />
+
+                        <TextView
+                            android:id="@+id/cheeseAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/cheeseAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addCheeseBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addCheeseBtn" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subChickenBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subCheeseBtn" />
+
+                        <TextView
+                            android:id="@+id/chickenAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/chickenAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addChickenBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addChickenBtn" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toppingTxtView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView03"
+                        android:textAlignment="center"
+                        android:textColor="#040303"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toppingTxtView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView04"
+                        android:textAlignment="center"
+                        android:textColor="#040303"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subPepperoniBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subPepperoniBtn" />
+
+                        <TextView
+                            android:id="@+id/pepperoniAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/pepperoniAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addPepperoniBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addPepperoniBtn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subSausageBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subSausageBtn" />
+
+                        <TextView
+                            android:id="@+id/sausageAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/sausageAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addSausageBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addSausageBtn" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toppingTxtView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView05"
+                        android:textAlignment="center"
+                        android:textColor="#0E0E0E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toppingTxtView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView06"
+                        android:textAlignment="center"
+                        android:textColor="#0E0E0E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subRedOnionBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subRedOnionBtn" />
+
+                        <TextView
+                            android:id="@+id/redOnionAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/redOnionAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addRedOnionBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addRedOnionBtn" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subMushroomBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subMushroomBtn" />
+
+                        <TextView
+                            android:id="@+id/mushroomAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/mushroomAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addMushroomBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addMushroomBtn" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/toppingTxtView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:includeFontPadding="false"
+                        android:text="@string/toppingTxtView07"
+                        android:textAlignment="center"
+                        android:textColor="#0E0E0E"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/toppingTxtView08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/toppingTxtView08"
+                        android:textAlignment="center"
+                        android:textColor="#121111"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subPineappleBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subPineappleBtn" />
+
+                        <TextView
+                            android:id="@+id/pineappleTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/pineappleAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addPineappleBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addPineappleBtn" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/subVeggiesBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/subVeggiesBtn" />
+
+                        <TextView
+                            android:id="@+id/veggiesAmntTxtView"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:background="#E6E2E2"
+                            android:gravity="center_vertical"
+                            android:text="@string/veggiesAmntTxtView"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addVeggiesBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="#65AAB4"
+                            android:text="@string/addVeggiesBtn" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FBFBFB"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/customerPromptTxtView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="#FAF7F7"
+                    android:text="@string/customerPromptTxtView01"
+                    android:textAlignment="center"
+                    android:textColor="#121111"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/customerQ1PlainTxt01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#FBF9F9"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/customerQ1PlainText01"
+                    android:textAlignment="center"
+                    android:textColor="#0C0C0C" />
+
+                <EditText
+                    android:id="@+id/customerQ2TxtPhone01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:autoText="false"
+                    android:ems="10"
+                    android:hint="Enter Phone Number:"
+                    android:inputType="phone"
+                    android:textAlignment="center"
+                    android:textColor="#070707" />
+
+                <EditText
+                    android:id="@+id/customerQ3TxtPostalAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="Enter Address:"
+                    android:inputType="textPostalAddress"
+                    android:textAlignment="center"
+                    android:textColor="#090909" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/orderBtn01"
+                    android:layout_width="105dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#5DC24D"
+                    android:backgroundTint="#5DC24D"
+                    android:text="@string/orderBtn01"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

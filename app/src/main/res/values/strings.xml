@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assign03-CruddyPizza</string>
+    <string name="toggleSwitch">en/fr</string>
+    <string name="crustSizeRadioGroup">s, m, l, xl</string>
+    <string name="smallSizeRadioBtn">s</string>
+    <string name="medSizeRadioBtn">m</string>
+    <string name="largSizeRadioBtn">l</string>
+    <string name="xlSizeRadioBtn">xl</string>
+    <string name="addCheeseBtn">+</string>
+    <string name="subCheeseBtn">-</string>
+    <string name="addChickenBtn">+</string>
+    <string name="subChickenBtn">-</string>
+    <string name="addPepperoniBtn">+</string>
+    <string name="subPepperoniBtn">-</string>
+    <string name="addSausageBtn">+</string>
+    <string name="subSausageBtn">-</string>
+    <string name="addRedOnionBtn">+</string>
+    <string name="subRedOnionBtn">-</string>
+    <string name="addMushroomBtn">+</string>
+    <string name="subMushroomBtn">-</string>
+    <string name="addPineappleBtn">+</string>
+    <string name="subPineappleBtn">-</string>
+    <string name="addVeggiesBtn">+</string>
+    <string name="subVeggiesBtn">-</string>
+    <string name="cheeseAmntTxtView">0</string>
+    <string name="chickenAmntTxtView">0</string>
+    <string name="pepperoniAmntTxtView">0</string>
+    <string name="sausageAmntTxtView">0</string>
+    <string name="redOnionAmntTxtView">0</string>
+    <string name="mushroomAmntTxtView">0</string>
+    <string name="pineappleAmntTxtView">0</string>
+    <string name="veggiesAmntTxtView">0</string>
+</resources>

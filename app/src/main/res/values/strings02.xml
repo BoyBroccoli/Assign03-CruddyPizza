@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    French String Names-->
+    <string name="crustPromptTxtView011">Choisissez la taille de la croûte!</string>
+    <string name="toppingsPromptTxtView011">Choisissez Toppings!</string>
+    <string name="toppingTxtView011">Fromage:</string>
+    <string name="toppingTxtView022">Poulet:</string>
+    <string name="toppingTxtView033">Pepperoni:</string>
+    <string name="toppingTxtView044">Saucisse:</string>
+    <string name="toppingTxtView055">Oignon Rouge:</string>
+    <string name="toppingTxtView066">Champignon:</string>
+    <string name="toppingTxtView077">Ananas:</string>
+    <string name="toppingTxtView088">Légumes:</string>
+    <string name="customerPromptTxtView011">Informations Client!</string>
+    <string name="customerQ1PlainText011">Nom du client:</string>
+    <string name="customerQ2TxtPhone011">Numéro de téléphone du client:</string>
+    <string name="customerQ3TxtPostalAddress011">Adresse du client:</string>
+    <string name="orderBtn011">Commande!</string>
+</resources>
