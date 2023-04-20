@@ -8,11 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="-27dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">>
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/logo01"
                 android:layout_width="match_parent"
@@ -27,11 +31,11 @@
                 android:backgroundTint="#FAFAFA">
 
                 <ImageButton
-                    android:src="@drawable/ic_back_arrow"
                     android:id="@+id/backBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
+                    android:src="@drawable/ic_back_arrow"
                     android:text="@string/searchDatabase" />
 
                 <Switch
@@ -50,15 +54,35 @@
                     android:textSize="16sp" />
             </TableRow>
 
-            <Button
-                android:id="@+id/showDbBtn"
+
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#EEDE8C"
-                android:text="@string/showDbResults"
-                android:textColor="#050000"
-                android:textSize="20sp"
+                android:background="#F5EA37"
+                android:backgroundTint="#F5EA37"
+                android:text="Database Results"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#100000"
+                android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:paddingTop="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_add" />
 
         </LinearLayout>
     </ScrollView>

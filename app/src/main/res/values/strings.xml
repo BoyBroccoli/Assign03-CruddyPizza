@@ -30,4 +30,6 @@
     <string name="mushroomAmntTxtView">0</string>
     <string name="pineappleAmntTxtView">0</string>
     <string name="veggiesAmntTxtView">0</string>
+    <string name="searchDatabase">Search</string>
+    <string name="showDbResults">Show Database Results</string>
 </resources>

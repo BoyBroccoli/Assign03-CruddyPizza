@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/customerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintStart_toEndOf="@+id/customerId"
+                app:layout_constraintTop_toTopOf="@+id/customerId" />
+
+            <TextView
+                android:id="@+id/createdAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="@+id/customerName"
+                app:layout_constraintTop_toBottomOf="@+id/customerId"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/createdAt"
+                app:layout_constraintLeft_toLeftOf="@+id/createdAt"
+                />
+
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                app:layout_constraintLeft_toLeftOf="@+id/address"
+                />
+
+            <TextView
+                android:id="@+id/pizzaSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="@+id/customerName"
+                app:layout_constraintLeft_toRightOf="@+id/customerName"
+                />
+
+            <TextView
+                android:id="@+id/toppingOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNum"
+                app:layout_constraintLeft_toLeftOf="@+id/phoneNum"
+                />
+
+            <TextView
+                android:id="@+id/toppingTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/toppingOne"
+                app:layout_constraintLeft_toLeftOf="@+id/toppingOne"
+                />
+
+            <TextView
+                android:id="@+id/toppingThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/toppingTwo"
+                app:layout_constraintLeft_toLeftOf="@+id/toppingTwo"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

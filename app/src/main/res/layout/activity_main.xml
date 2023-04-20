@@ -23,20 +23,35 @@
                 android:background="#FEFEFE"
                 app:srcCompat="@drawable/savagepizza_logo" />
 
-            <Switch
-                android:id="@+id/toggleSwitch"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="#FEFEFE"
-                android:contextClickable="false"
-                android:foregroundGravity="clip_horizontal"
-                android:gravity="center_horizontal"
-                android:showText="true"
-                android:textAlignment="center"
-                android:textOff="En"
-                android:textOn="Fr"
-                android:textSize="16sp" />
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FAFAFA">
+
+                <ImageButton
+                    android:src="@drawable/ic_action_name"
+                    android:id="@+id/searchDbBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="@string/searchDatabase" />
+
+                <Switch
+                    android:id="@+id/toggleSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FEFEFE"
+                    android:contextClickable="false"
+                    android:foregroundGravity="clip_horizontal"
+                    android:gravity="center_horizontal"
+                    android:showText="true"
+                    android:textAlignment="center"
+                    android:textOff="En"
+                    android:textOn="Fr"
+                    android:textSize="16sp" />
+            </TableRow>
 
             <TextView
                 android:id="@+id/crustPromptTxtView01"
@@ -551,8 +566,8 @@
                     android:layout_marginTop="30dp"
                     android:background="#FBF9F9"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/customerQ1PlainText01"
+                    android:inputType="text"
+                    android:hint="@string/customerQ1PlainText01"
                     android:textAlignment="center"
                     android:textColor="#0C0C0C" />
 
